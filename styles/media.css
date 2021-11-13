@@ -23,6 +23,34 @@
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  .slide-page {
+    padding: 0;
+    margin-top: 120px;
+  }
+  .slide-page::after {
+    display: none;
+  }
+  .slide__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .slide__content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    width: 100%;
+  }
+  .slide__info {
+    margin-bottom: 120px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -89,6 +117,26 @@
   .slide {
     scroll-margin: 70px;
   }
+  .footer__logo {
+    margin-bottom: 20px;
+  }
+  .footer__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer__col {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -111,11 +159,36 @@
   .about__item:nth-of-type(3) {
     display: none;
   }
+  .about__rect {
+    display: none;
+  }
+  .slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .slide .carousel-btns {
+    width: 100%;
+  }
+  .slide .carousel-btns button:first-of-type {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 576px) {
   .services__item {
     width: 100%;
+  }
+  .title {
+    font-size: 30px;
+    line-height: 120%;
   }
   .about__item-title {
     font-size: 50px;
