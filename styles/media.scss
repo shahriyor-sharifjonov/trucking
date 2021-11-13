@@ -1,0 +1,117 @@
+@media (min-width:1400px){
+    .container{
+        max-width: 1140px !important;
+        width: 100% !important;
+    }
+}
+@media (max-width:1200px){
+    .about{
+        &__content{
+            max-width: 600px;
+            width: 100%;
+            margin-right: 0;
+        }
+        &__body{
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+    }
+}
+@media (max-width:992px){
+    .header{
+        &__button{
+            display: block;
+        }
+        &__loc{
+            display: none;
+        }
+        &__hr{
+            display: none;
+        }
+        &__nav{
+            height: 70px;
+            &.sticky{
+                height: 70px;
+            }
+        }
+        &__list{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 250px;
+            left: 0;
+            background: #2F343A;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transform: translateX(-100%);
+            transition: 0.5s transform;
+            padding-left: 0;
+            z-index: 50;
+            &.open {
+                transform: translateX(0);
+                box-shadow: 0 0 30px #00000090;
+            }
+        }
+        &__li{
+            &:not(:last-of-type){
+                margin-right: 0px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .intro{
+        height: calc(100vh - 115px);
+        &.sticky{
+            margin-top: 70px;
+        }
+    }
+    .services{
+        &__item{
+            width: calc(50% - 0.5px);
+        }
+    }
+    .slide{
+        scroll-margin: 70px;
+    }
+}
+@media (max-width:768px){
+    .intro{
+        &__content{
+            padding: 30px;
+        }
+        &__title{
+            line-height: 120%;
+            font-size: 32px;
+            margin-bottom: 18px;
+        }
+        &__desc{
+            line-height: 120%;
+            font-size: 18px;
+        }
+    }
+    .about{
+        &__item{
+            max-width: 300px;
+            width: 50%;
+            &:nth-of-type(3){
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width:576px){
+    .services{
+        &__item{
+            width: 100%;
+        }
+    }
+    .about{
+        &__item{
+            &-title{
+                font-size: 50px;
+            }
+        }
+    }
+}
